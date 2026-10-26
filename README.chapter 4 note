@@ -1,0 +1,111 @@
+Chapter 4: Loops in C#
+
+1. The while Loop
+
+Definition: A while loop repeats statements as long as a condition is true.
+
+Syntax:
+
+while (condition)
+{
+    statements;
+}
+
+Example:
+
+int count = 0;
+
+while (count < 5)
+{
+    MessageBox.Show("Hello");
+    count++;
+}
+
+Remember:
+
+- "while" checks the condition first.
+- If the condition is false, the loop does not run.
+- "count++" increases the value by 1.
+- This example runs 5 times.
+
+2. Increment (++) and Decrement (--) Operators
+
+Increment ("++"): Increases a variable by 1.
+
+Decrement ("--"): Decreases a variable by 1.
+
+Example 1: Increment
+
+int x = 5;
+x++;
+MessageBox.Show(x.ToString());
+
+Output: "6"
+
+Example 2: Decrement
+
+int x = 5;
+x--;
+MessageBox.Show(x.ToString());
+
+Output: "4"
+
+Prefix vs Postfix
+
+- Prefix ("++x"): Changes the value first, then uses it.
+- Postfix ("x++"): Uses the old value first, then changes it.
+
+Example 3: Prefix
+
+int x = 5;
+int y = ++x;
+
+Result: "x = 6", "y = 6"
+
+Example 4: Postfix
+
+int x = 5;
+int y = x++;
+
+Result: "x = 6", "y = 5"
+
+Other Ways to Increment and Decrement
+
+x++;          // Add 1
+x += 1;       // Add 1
+x = x + 1;    // Add 1
+
+x--;          // Subtract 1
+x -= 1;       // Subtract 1
+x = x - 1;    // Subtract 1
+
+3. The for Loop
+
+Definition: A for loop repeats statements using a counter variable.
+
+Syntax:
+
+for (initialization; condition; update)
+{
+    statements;
+}
+
+Example:
+
+for (int i = 0; i < 5; i++)
+{
+    MessageBox.Show("Hello");
+}
+
+The three parts:
+
+1. Initialization — starts the counter.
+2. Condition — checks whether the loop continues.
+3. Update — increases or decreases the counter.
+
+This example runs 5 times.
+
+Difference Between while and for
+
+- "while" — used when repetition depends on a condition.
+- "for" — useful when a counter controls the number of repetitions.
